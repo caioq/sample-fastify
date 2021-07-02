@@ -1,0 +1,7 @@
+### sem querystring
+GET http://localhost:5000/ping HTTP/1.1
+content-type: application/json
+
+### Com querystring
+GET http://localhost:5000/ping?name=caio HTTP/1.1
+content-type: application/json
