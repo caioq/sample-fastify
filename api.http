@@ -5,3 +5,11 @@ content-type: application/json
 ### Com querystring
 GET http://localhost:5000/ping?name=caio HTTP/1.1
 content-type: application/json
+
+### Get Item by id
+GET http://localhost:5000/items/1 HTTP/1.1
+content-type: application/json
+
+### Get Items
+GET http://localhost:5000/items HTTP/1.1
+content-type: application/json
