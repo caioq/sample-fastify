@@ -1,4 +1,4 @@
-import fastify, { FastifyInstance, RouteShorthandOptions } from "fastify";
+import fastify, { FastifyInstance, RouteShorthandOptions } from 'fastify';
 import { Server, IncomingMessage, ServerResponse } from "http";
 import itemRoutes from './routes/item.routes'
 

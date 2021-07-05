@@ -1,6 +1,6 @@
 import ItemController from '../controllers/item.controller'
 import ItemController2 from '../controllers/ItemController'
-import { FastifyInstance, RouteShorthandOptions } from "fastify";
+import { FastifyInstance, RouteShorthandOptions } from 'fastify';
 
 // Item schema
 const Item = {
