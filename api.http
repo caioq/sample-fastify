@@ -13,3 +13,11 @@ content-type: application/json
 ### Get Items
 GET http://localhost:5000/items HTTP/1.1
 content-type: application/json
+
+### Get Items
+POST http://localhost:5000/items HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Item mais novo 2"
+}

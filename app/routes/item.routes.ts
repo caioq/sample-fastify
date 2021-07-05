@@ -1,4 +1,5 @@
 import ItemController from '../controllers/item.controller'
+import ItemController2 from '../controllers/ItemController'
 import { FastifyInstance, RouteShorthandOptions } from "fastify";
 
 // Item schema
@@ -30,6 +31,15 @@ const getItemOpts = {
     },
   },
   handler: ItemController.getItem,
+}
+
+const createItem = {
+  schema: {
+    response: {
+      201: Item,
+    }
+  },
+  handler: ItemController2.create
 }
 
 // PING POC test
@@ -75,6 +85,9 @@ function itemRoutes(fastify: FastifyInstance, options, done) {
 
   // Get single items
   fastify.get('/items/:id', getItemOpts)
+
+  // Create Item
+  fastify.post('/items', createItem)
 
   done()
 }
